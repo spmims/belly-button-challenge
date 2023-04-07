@@ -61,10 +61,7 @@ function buildMetadata(sample) {
 
         // Use Object.entries to add each key value pair
         Object.entries(valueData).forEach(([key, values]) => {
-            
-            // Save each key value as they are added
             console.log(key, values);
-
             d3.select("#sample-metadata").append("h5").text(`${key}: ${values}`);
         });
     });
